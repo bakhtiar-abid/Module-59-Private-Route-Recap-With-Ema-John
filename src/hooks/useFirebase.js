@@ -41,7 +41,7 @@ const useFirebase = () => {
             // An error happened.
          });
    };
-   // firebase observe if anything has changed or not for example if user sign in in the website it will keep the record the by using on auth state change by using useeffect in react
+   // firebase observe if anything has changed or not for example if user sign in in the website it will keep the record the by using on auth state change by using useEffect in react
 
    //observe whether user auth state change or not
 

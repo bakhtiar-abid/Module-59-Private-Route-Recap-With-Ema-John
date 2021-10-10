@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
@@ -6,6 +7,7 @@ import "./Login.css";
 
 const Login = () => {
    const { googleSignIn } = useAuth();
+   const location = useLocation();
    return (
       <div className="login-form">
          <div>
