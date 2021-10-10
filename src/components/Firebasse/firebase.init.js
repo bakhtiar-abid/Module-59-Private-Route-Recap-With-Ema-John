@@ -19,14 +19,14 @@ Step-1 : Initial Setup
 5. Enable auth method
 -------------------------------
 
-Step-2:
+Step-2: Setup Component
 1. Create Login Component
 2. Create Register Component
 3. Create Route for Login and Register
 
 ------------------------------------
 
-Step-3:
+Step-3: Set Auth System
 1. Set up Sign in method
 2. setup sign out method
 3. user state
@@ -36,10 +36,16 @@ Step-3:
 ----------------------------------------
 speacially for context use purpose
 
-Step: 4:
+Step: 4: Create Auth Context hook (useAuth)
 1. create a auth context
 2. Create context provider
 3. set context Provider context value
 4. use Auth Provider
 5. create useAuth Hook
+--------------------------------------------
+
+Step 5: Create Private Route
+1. Create private Route
+2. set private route
+
 */
