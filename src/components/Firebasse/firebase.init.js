@@ -30,5 +30,15 @@ Step-3:
 1. Set up Sign in method
 2. setup sign out method
 3. user state
-4. specail observer
+4. special observer
+5. retun necessary methods and states from useFirebase
+
+----------------------------------------
+speacially for context use purpose
+
+Step: 4:
+1. create a auth context
+2. Create context provider
+3. use Auth Provider
+4. create useAuth Hook
 */

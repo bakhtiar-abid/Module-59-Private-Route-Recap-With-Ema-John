@@ -4,9 +4,8 @@ import useFirebase from "../../hooks/useFirebase";
 import initializeAuthentication from "../Firebasse/firebase.init";
 import "./Login.css";
 
-initializeAuthentication();
 const Login = () => {
-   const { googleSignIn } = useFirebase();
+   const { user, googleSignIn } = useFirebase();
    return (
       <div className="login-form">
          <div>
