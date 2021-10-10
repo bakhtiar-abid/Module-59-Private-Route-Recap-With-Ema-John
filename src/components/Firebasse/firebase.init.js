@@ -39,6 +39,7 @@ speacially for context use purpose
 Step: 4:
 1. create a auth context
 2. Create context provider
-3. use Auth Provider
-4. create useAuth Hook
+3. set context Provider context value
+4. use Auth Provider
+5. create useAuth Hook
 */
