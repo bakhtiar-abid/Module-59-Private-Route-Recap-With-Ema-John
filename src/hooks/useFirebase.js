@@ -19,17 +19,7 @@ const useFirebase = () => {
    const auth = getAuth();
 
    const signInUsingGoogle = () => {
-      signInWithPopup(auth, googleProvider)
-         .then((result) => {
-            const user = result.user;
-            setUser(user);
-            console.log(user);
-            // ...
-         })
-         .catch((error) => {
-            const errorMessage = error.message;
-            setError(errorMessage);
-         });
+      return signInWithPopup(auth, googleProvider);
    };
 
    const logOut = () => {
@@ -46,7 +36,7 @@ const useFirebase = () => {
    //observe whether user auth state change or not
 
    useEffect(() => {
-      onAuthStateChanged(auth, (user) => {
+      const unsubscribe = onAuthStateChanged(auth, (user) => {
          if (user) {
             // User is signed in, see docs for a list of available properties
             // https://firebase.google.com/docs/reference/js/firebase.User
@@ -54,6 +44,7 @@ const useFirebase = () => {
             // ...
          }
       });
+      return unsubscribe;
    }, []);
 
    return {
